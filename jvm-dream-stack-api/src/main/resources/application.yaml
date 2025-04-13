@@ -1,0 +1,19 @@
+spring:
+  application:
+    name: jvm-dream-stack-api
+  r2dbc:
+    url: r2dbc:postgresql://localhost:5432/jvmdreamstack
+    username: jvmdreamstack
+    password: password
+    pool:
+      initial-size: 10
+      max-size: 10
+  redis:
+    host: localhost
+    port: 6379
+  flyway:
+    enabled: true
+    url: jdbc:postgresql://localhost:5432/jvmdreamstack
+    user: jvmdreamstack
+    password: password
+    validateMigrationNaming: true
